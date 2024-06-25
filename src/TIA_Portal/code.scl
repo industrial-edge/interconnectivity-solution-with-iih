@@ -1,0 +1,39 @@
+IF #Overheated = FALSE THEN
+    IF (#Set_Machine_Velocity - #Sensor_Velocity) > 0.01 THEN
+        #Sensor_Velocity := #Sensor_Velocity + 0.1;
+    END_IF;
+    IF (#Set_Machine_Velocity - #Sensor_Velocity) < 0.01 THEN
+        #Sensor_Velocity := #Sensor_Velocity - 0.1;
+    END_IF;
+    #Sensor_Vibration := ABS(#Sensor_Velocity) * (5.0 / 20.0);
+    #Sensor_Temperature := ABS(#Sensor_Velocity) * (30.0 / 200.0);
+ELSE
+    IF (#Sensor_Vibration < 5) THEN
+        #Sensor_Vibration := 0;
+    ELSE
+        #Sensor_Vibration := #Sensor_Vibration - 0.06;
+    END_IF;
+
+    #Sensor_Temperature := #Sensor_Temperature - 0.01;
+    IF (#Sensor_Temperature < 20.0) THEN
+        #Overheated := FALSE;
+    END_IF;
+END_IF;
+
+
+IF #Sensor_Temperature > 120 THEN
+    #Overheated := TRUE;
+    #Sensor_Velocity := 0;
+END_IF;
+
+// Add randomness to sensor data
+#diTime := USINT_TO_REAL(#Timestamp.SECOND);
+#rRandom := SIN(#diTime) * 0.00001;
+
+#Sensor_Temperature := #Sensor_Temperature + #rRandom;
+#Sensor_Velocity := #Sensor_Velocity + #rRandom;
+#Sensor_Vibration := #Sensor_Vibration + #rRandom;
+
+//Calculate Timestamp
+#"temp-retvalRD" := RD_SYS_T(#"temp-datetime");
+#Timestamp := #"temp-datetime";

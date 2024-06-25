@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UANodeSet LastModified="2024-03-20T19:08:22.352Z" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:si="http://www.siemens.com/OPCUA/2017/SimaticNodeSetExtensions" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <NamespaceUris>
+        <Uri>http://opcfoundation.org/UA/SQLUC</Uri>
+        <Uri>http://machiendata</Uri>
+    </NamespaceUris>
+    <Models>
+        <Model ModelUri="http://opcfoundation.org/UA/SQLUC" PublicationDate="2024-03-20T11:48:36-07:00" Version="1.00">
+            <RequiredModel ModelUri="http://opcfoundation.org/UA/" PublicationDate="2021-09-15T00:00:00Z" Version="1.04.10"/>
+        </Model>
+        <Model ModelUri="http://machiendata" PublicationDate="2024-03-20T11:54:07-07:00" Version="1.00">
+            <RequiredModel ModelUri="http://opcfoundation.org/UA/" PublicationDate="2021-09-15T00:00:00Z" Version="1.04.10"/>
+        </Model>
+    </Models>
+    <Aliases>
+        <Alias Alias="Boolean">i=1</Alias>
+        <Alias Alias="Float">i=10</Alias>
+        <Alias Alias="DateTime">i=13</Alias>
+        <Alias Alias="String">i=12</Alias>
+        <Alias Alias="HasComponent">i=47</Alias>
+        <Alias Alias="HasProperty">i=46</Alias>
+        <Alias Alias="Organizes">i=35</Alias>
+        <Alias Alias="HasTypeDefinition">i=40</Alias>
+    </Aliases>
+    <Extensions>
+        <Extension>
+            <si:Generator Product="SiOME" Edition="Standard" Version="2.8.1"/>
+        </Extension>
+        <Extension>
+            <si:GeneratorExtension Hash="8b1412912418fe9d9a83125484b48619"/>
+        </Extension>
+    </Extensions>
+    <UAObject SymbolicName="http___opcfoundation_org_UA_SQLUC" NodeId="ns=1;i=5000" BrowseName="1:http://opcfoundation.org/UA/SQLUC" ParentNodeId="i=11715">
+        <DisplayName>http://opcfoundation.org/UA/SQLUC</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">i=11715</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="Boolean" NodeId="ns=1;i=6000" BrowseName="IsNamespaceSubset" ParentNodeId="ns=1;i=5000">
+        <DisplayName>IsNamespaceSubset</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="DateTime" NodeId="ns=1;i=6001" BrowseName="NamespacePublicationDate" ParentNodeId="ns=1;i=5000">
+        <DisplayName>NamespacePublicationDate</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:DateTime>2024-03-20T11:48:36-07:00</uax:DateTime>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" NodeId="ns=1;i=6002" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=5000">
+        <DisplayName>NamespaceUri</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:String>http://opcfoundation.org/UA/SQLUC</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" NodeId="ns=1;i=6003" BrowseName="NamespaceVersion" ParentNodeId="ns=1;i=5000">
+        <DisplayName>NamespaceVersion</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:String>1.00</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="i=256" ValueRank="1" NodeId="ns=1;i=6004" BrowseName="StaticNodeIdTypes" ParentNodeId="ns=1;i=5000">
+        <DisplayName>StaticNodeIdTypes</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="i=291" ValueRank="1" NodeId="ns=1;i=6005" BrowseName="StaticNumericNodeIdRange" ParentNodeId="ns=1;i=5000">
+        <DisplayName>StaticNumericNodeIdRange</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" NodeId="ns=1;i=6006" BrowseName="StaticStringNodeIdPattern" ParentNodeId="ns=1;i=5000">
+        <DisplayName>StaticStringNodeIdPattern</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="i=96" ValueRank="1" NodeId="ns=1;i=6007" BrowseName="DefaultRolePermissions" ParentNodeId="ns=1;i=5000">
+        <DisplayName>DefaultRolePermissions</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAObject NodeId="ns=1;i=5001" BrowseName="1:MachineData" ParentNodeId="i=85">
+        <DisplayName>MachineData</DisplayName>
+        <References>
+            <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="Float" NodeId="ns=1;i=6008" BrowseName="1:Sensor_Temperature" ParentNodeId="ns=1;i=5001" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Sensor_Temperature</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5001</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Boolean" NodeId="ns=1;i=6010" BrowseName="1:Overheated" ParentNodeId="ns=1;i=5001" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Overheated</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5001</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Float" NodeId="ns=1;i=6011" BrowseName="1:Sensor_Velocity" ParentNodeId="ns=1;i=5001" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Sensor_Velocity</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5001</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Float" NodeId="ns=1;i=6012" BrowseName="1:Sensor_Vibration" ParentNodeId="ns=1;i=5001" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Sensor_Vibration</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5001</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="DateTime" NodeId="ns=1;i=6013" BrowseName="1:Timestamp" ParentNodeId="ns=1;i=5001" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Timestamp</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5001</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="Float" NodeId="ns=1;i=6014" BrowseName="1:Set_Machine_Velocity" ParentNodeId="ns=1;i=5001" UserAccessLevel="3" AccessLevel="3">
+        <DisplayName>Set_Machine_Velocity</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5001</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+        </References>
+    </UAVariable>
+    <UAObject SymbolicName="http___machiendata" NodeId="ns=2;i=5000" BrowseName="2:http://machiendata" ParentNodeId="i=11715">
+        <DisplayName>http://machiendata</DisplayName>
+        <References>
+            <Reference ReferenceType="HasComponent" IsForward="false">i=11715</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
+        </References>
+    </UAObject>
+    <UAVariable DataType="Boolean" NodeId="ns=2;i=6000" BrowseName="IsNamespaceSubset" ParentNodeId="ns=2;i=5000">
+        <DisplayName>IsNamespaceSubset</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=5000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="DateTime" NodeId="ns=2;i=6001" BrowseName="NamespacePublicationDate" ParentNodeId="ns=2;i=5000">
+        <DisplayName>NamespacePublicationDate</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=5000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:DateTime>2024-03-20T11:54:07-07:00</uax:DateTime>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" NodeId="ns=2;i=6002" BrowseName="NamespaceUri" ParentNodeId="ns=2;i=5000">
+        <DisplayName>NamespaceUri</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=5000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:String>http://machiendata</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="String" NodeId="ns=2;i=6003" BrowseName="NamespaceVersion" ParentNodeId="ns=2;i=5000">
+        <DisplayName>NamespaceVersion</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=5000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+        <Value>
+            <uax:String>1.00</uax:String>
+        </Value>
+    </UAVariable>
+    <UAVariable DataType="i=256" ValueRank="1" NodeId="ns=2;i=6004" BrowseName="StaticNodeIdTypes" ParentNodeId="ns=2;i=5000">
+        <DisplayName>StaticNodeIdTypes</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=5000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="i=291" ValueRank="1" NodeId="ns=2;i=6005" BrowseName="StaticNumericNodeIdRange" ParentNodeId="ns=2;i=5000">
+        <DisplayName>StaticNumericNodeIdRange</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=5000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="String" NodeId="ns=2;i=6006" BrowseName="StaticStringNodeIdPattern" ParentNodeId="ns=2;i=5000">
+        <DisplayName>StaticStringNodeIdPattern</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=5000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+    <UAVariable DataType="i=96" ValueRank="1" NodeId="ns=2;i=6007" BrowseName="DefaultRolePermissions" ParentNodeId="ns=2;i=5000">
+        <DisplayName>DefaultRolePermissions</DisplayName>
+        <References>
+            <Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=5000</Reference>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        </References>
+    </UAVariable>
+</UANodeSet>
